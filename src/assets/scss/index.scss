@@ -1,0 +1,56 @@
+.table-info {
+  margin: 0 auto;
+  width: max-content;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid grey;
+}
+
+th {
+  border: 1px solid grey;
+}
+
+.table-info__row-wrapper {
+  display: contents;
+}
+
+.table-info__row-wrapper:hover td{
+  background-color: rgb(241, 232, 232);
+}
+
+th, td {
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+.table-info__button {
+  display: block;
+  margin: 10px 0;
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 3px solid grey;
+}
+
+.table-info__button:hover {
+  background-color: rgb(241, 232, 232);
+}
+
+.table-info__checked {
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.table-info__checkbox-row {
+  padding: 0;
+}
+
+.table-info__checkbox-row input {
+  display: block;
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+}

@@ -1,9 +1,11 @@
-import Vue from "vue";
+import Vue, {PropType} from "vue";
 import VueRouter, {Route} from "vue-router";
 import {RouteConfig} from "vue-router/types/router";
 import {Resolver} from "../../../typings/vue";
 import {RouteMeta} from "../types/router/types";
-import {MainPage} from "../pages/mainPage";
+import {MainPage, Event} from "../pages/mainPage";
+import {EventPage} from "../pages/eventPage";
+
 
 Vue.use(VueRouter);
 
@@ -40,6 +42,12 @@ export class RouterConfiguration {
                 name: "mainPage",
                 path: "/main",
                 component: MainPage
+            },
+            {
+                name: "eventPage",
+                path: "/event",
+                component: EventPage,
+                props: true
             }
         ];
     }
