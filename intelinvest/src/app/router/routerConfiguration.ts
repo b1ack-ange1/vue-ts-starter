@@ -1,7 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import {RouteConfig} from "vue-router/types/router";
-import {EventsPage} from "../pages/eventsPage";
+import { EventsPage } from "../pages/eventsPage";
+import { AboutEventPage } from "../pages/aboutEventPage";
 
 Vue.use(VueRouter);
 
@@ -41,7 +42,15 @@ export class RouterConfiguration {
                 meta: {
                     title: "События",
                 }
-            }
+			},
+			{
+				name: 'aboutEvent',
+				path: '/aboutEvent/:id',
+				component: AboutEventPage,
+				meta: {
+					title: "Описание события"
+				}
+			}
         ];
     }
 }
